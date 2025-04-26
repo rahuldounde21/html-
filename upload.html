@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Business</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Upload Your Business</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload Business</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input-upload" placeholder="Search businesses..." oninput="filterBusinesses()">
+        </div>
+    </header>
+
+    <main>
+        <section id="upload-form">
+            <h2>Submit Business Info</h2>
+            <form id="business-form">
+                <label for="name">Business Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="contact">Contact Info:</label>
+                <input type="text" id="contact" name="contact" required>
+
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Local Business Directory</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

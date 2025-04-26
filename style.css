@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.search-container {
+    margin-top: 15px;
+}
+
+.search-container input {
+    padding: 12px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.search-container input::placeholder {
+    color: #fff;
+    font-style: italic;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#directory-list {
+    margin-top: 40px;
+}
+
+.business-item {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.business-item:hover {
+    transform: translateY(-10px);
+}
+
+.business-item h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.business-item p {
+    font-size: 1.1em;
+}
+
+#upload-form {
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    margin: 30px auto;
+    width: 70%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#upload-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1.1em;
+}
+
+#upload-form input, #upload-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+#upload-form button {
+    padding: 15px 30px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#upload-form button:hover {
+    background-color: #6a11cb;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .search-container input {
+        width: 90%;
+    }
+
+    #upload-form {
+        width: 90%;
+    }
+
+    .business-item {
+        width: 90%;
+    }
+}
